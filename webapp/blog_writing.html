@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Writing</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="lib/bootStrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/blog_writing.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css"/>
+
+    <!--js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootStrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/blog_writing.js"></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div id="fh5co-logo">
+                            <h1>
+                                <a href="home.html">
+                                    Welcome to XBack Home
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--导航栏-->
+            <nav class="navbar navbar-default navigation" id="navigation" role="navigation">
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#main-nav">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="container">
+                            <div class="collapse navbar-collapse" id="main-nav">
+                                <ul  class="nav navbar-nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Front-end Development</a></li>
+                                    <li><a href="#">Study Note</a></li>
+                                    <li><a href="#">Feeling Life</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Contract</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--内容部分start-->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="content-left col-md-9">
+                        <!--面包屑导航栏-->
+                        <div>
+                            <ol class="breadcrumb">
+                                <li>首页</li>
+                                <li>»</li>
+                                <li class="active">Blog_writing</li>
+                            </ol>
+                        </div>
+                        <!--Blog编写-->
+                        <div class="writing">
+                            <div class="row">
+                                <form class="upload-pic">
+                                    <span class="glyphicon glyphicon-picture" aria-hidden="true"><input type="file" accept=".png .jpg,.jpeg"/></span>
+                                </form>
+                            </div>
+                            <div class="row">
+                                <textarea></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="button">
+                                    <button id="fat-btn" class="btn btn-primary" data-loading-text="发表"
+                                            type="button">发表
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--content-left end-->
+                    <div class="content-right col-md-3">
+                        <!--用户介绍开始-->
+                        <aside id="sidebar">
+                            <div>
+                                <div class="side animate-box">
+                                    <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+                                        <h2><span>About Me</span></h2>
+                                    </div>
+                                    <div class="fh5co-staff">
+                                        <img src="image/user1.jpg" alt="Free HTML5 Templates by FreeHTML5.co">
+                                        <h3>Lucky Girl</h3>
+                                        <strong class="role">UnderGraduate</strong>
+                                        <p class="proverb">The more deligence,the more luckiness you will abtain.</p>
+                                        <ul class="fh5co-social-icons">
+                                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                                            <li><a href="#"><i class="icon-github"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="side animate-box">
+                                    <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+                                        <h2><span>Latest Posts</span></h2>
+                                    </div>
+                                    <div class="blog-entry">
+                                        <a href="#">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <img src="image/post1.jpg" class="img-responsive" alt="">
+                                                </div>
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="desc">
+                                                        <span class="date">Nov.25.2017</span>
+                                                        <h3>Most Beautiful Site in 2017</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-entry">
+                                        <a href="#">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <img src="image/post2.jpg" class="img-responsive" alt="">
+                                                </div>
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="desc">
+                                                        <span class="date">Nov.25.2017</span>
+                                                        <h3>Most Beautiful Site in 2017</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-entry">
+                                        <a href="#">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <img src="image/post3.jpg" class="img-responsive" alt="">
+                                                </div>
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="desc">
+                                                        <span class="date">Nov.25.2017</span>
+                                                        <h3>Most Beautiful Site in 2017</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="side animate-box">
+                                    <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+                                        <h2><span>Category</span></h2>
+                                    </div>
+                                    <ul class="category">
+                                        <li><a href="#"><i class="icon-check"></i>Lifestyle</a></li>
+                                        <li><a href="#"><i class="icon-check"></i>Web Development</a></li>
+                                        <li><a href="#"><i class="icon-check"></i>Web Design</a></li>
+                                        <li><a href="#"><i class="icon-check"></i>Nature</a></li>
+                                        <li><a href="#"><i class="icon-check"></i>Life</a></li>
+                                        <li><a href="#"><i class="icon-check"></i>Entertainment</a></li>
+                                    </ul>
+                                </div>
+                                <div class="side animate-box">
+                                    <div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+                                        <h2><span>Intagram</span></h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="insta insta_img">
+                                                <img src="image/list7.jpg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <!--用户介绍结束-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--内容部分结束-->
+        </div>
+        <!--内容部分结束-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div id="fh5co-logo">
+                        <h1>
+                            <a href="home.html">
+                                XBack Home
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul>
+                        <li><span class="white1 qfy-icon qfy-icon_32x32 qq-icon_32x32"></span></li>
+                        <li><span class="white1 qfy-icon qfy-icon_32x32 facebook-icon_32x32"></span></li>
+                        <li><span class="white1 qfy-icon qfy-icon_32x32 weixin-icon_32x32"></span></li>
+                        <li><span class="white1 qfy-icon qfy-icon_32x32 email-icon_32x32"></span></li>
+                        <li><span class="white1 qfy-icon qfy-icon_32x32 phone1-icon_32x32"></span></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <p class="copyright">@CopyRight©2018 XBack个人博客所有</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

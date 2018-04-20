@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <!--css-->
+    <link rel="stylesheet" href="lib/bootStrap/css/bootstrap.css" media="all"/>
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css" media="all"/>
+    <link rel="stylesheet" href="css/login1.css" media="all"/>
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <!--js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js" ></script>
+    <script type="text/javascript" src="lib/bootStrap/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="lib/bootstrapValidator.min.js" ></script>
+    <script type="text/javascript" src="js/common.js" ></script>
+    <style>
+        body{
+            background-image: url(image/body_repeat.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!--标题-->
+        <div class="row">
+            <h2 class="title">
+                <p>Welcome to Login XBack Home</p>
+            </h2>
+        </div>
+        <!--登录表单-->
+        <div class="login-div">
+            <div class="container">
+                <div class="info-canvas col-md-8 col-md-push-2">
+                    <div class="con">
+                        <form action="#" id="login" method="post" onsubmit="false">
+                            <!--猫头鹰-->
+                            <div class="row">
+                                <div class="col-md-4 col-md-push-4">
+                                    <div id="owl-login">
+                                        <!--鼠标未聚焦到password的时候的左手和右手-->
+                                        <div class="hands">
+                                            <div class="hand hand-l"></div>
+                                            <div class="hand hand-r"></div>
+                                        </div>
+                                        <!--鼠标聚焦时将眼睛遮住时的手-->
+                                        <div class="arms">
+                                            <div class="arm arm-l"></div>
+                                            <div class="arm arm-r"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--用户名-->
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-push-3">
+                                        <i class="control-i fa fa-user"></i>
+                                        <input class="form-control input-lg" type="text" placeholder="用户名" name="username"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--密码-->
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-push-3">
+                                        <i class="control-i fa fa-lock"></i>
+                                        <input class="form-control input-lg" id="pwd" type="password" placeholder="密码" name="password"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--验证码-->
+                            <!--<div class="row">-->
+                                <!--<div class="form-group">-->
+                                    <!--<div class="col-md-3 col-md-push-3">-->
+                                        <!--<input class="form-control input-lg" type="text" placeholder="验证码" name="captcha"/>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-md-3 col-md-push-3">-->
+                                        <!--<input class="form-control input-lg" type="text"/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--登录按钮-->
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-push-3">
+                                        <input class="form-control input-lg btn-login" id="btn-login" type="submit" value="登录"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/login.js" ></script>
+</html>

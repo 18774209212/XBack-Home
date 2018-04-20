@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Sacramento", cursive; }
+  body a {
+    text-decoration: none;
+    font-family: "Sacramento", cursive; }
+  body .center {
+    margin: 0 auto; }
+  body .text-center {
+    text-align: center; }
+  body .f-left {
+    float: left; }
+  body #fh5co-logo {
+    text-align: center; }
+    body #fh5co-logo h1 {
+      font-family: "Sacramento", cursive; }
+      body #fh5co-logo h1 a {
+        text-decoration: none;
+        color: #fbf2eb; }
+  body .navbar-default {
+    background-color: transparent;
+    border: none; }
+    body .navbar-default .navbar-nav li a {
+      font-size: 1.4em;
+      color: #333; }
+    body .navbar-default .navbar-nav li:hover {
+      background-color: #fbf2eb; }
+  body .content .carousel .carousel-inner .item img {
+    width: 100%;
+    height: 100%; }
+  body li {
+    list-style: none; }
+  body .content-right #sidebar .side {
+    margin-bottom: 20%; }
+    body .content-right #sidebar .side .fh5co-heading h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      font-family: "Sacramento", cursive;
+      position: relative;
+      padding: 0.5em 0.8em;
+      border: 1px solid #000;
+      z-index: 8; }
+      body .content-right #sidebar .side .fh5co-heading h2 spa {
+        padding: 10px 20px; }
+      body .content-right #sidebar .side .fh5co-heading h2 span:after {
+        position: absolute;
+        top: -10px;
+        bottom: 10px;
+        left: -10px;
+        right: 10px;
+        content: '';
+        background: #fbf2eb;
+        z-index: -1; }
+    body .content-right #sidebar .side .fh5co-staff {
+      text-align: center; }
+      body .content-right #sidebar .side .fh5co-staff img {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 20px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+      body .content-right #sidebar .side .fh5co-staff h3, body .content-right #sidebar .side .fh5co-staff strong, body .content-right #sidebar .side .fh5co-staff p {
+        font-family: "Sacramento", cursive;
+        color: #888;
+        padding-bottom: 15px; }
+      body .content-right #sidebar .side .fh5co-staff .proverb {
+        color: #2aabd2; }
+      body .content-right #sidebar .side .fh5co-staff .fh5co-social-icons {
+        overflow: hidden; }
+        body .content-right #sidebar .side .fh5co-staff .fh5co-social-icons li {
+          float: left;
+          text-align: center; }
+          body .content-right #sidebar .side .fh5co-staff .fh5co-social-icons li a {
+            text-decoration: none;
+            display: inline-block;
+            color: #1d2f3b;
+            padding-left: 10px;
+            padding-right: 10px; }
+            body .content-right #sidebar .side .fh5co-staff .fh5co-social-icons li a i {
+              font-size: 20px; }
+    body .content-right #sidebar .side .blog-entry {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 100%;
+      padding: 1em 1em; }
+    body .content-right #sidebar .side .blog-entry > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none; }
+      body .content-right #sidebar .side .blog-entry > a img {
+        width: 90px;
+        height: 90px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+      body .content-right #sidebar .side .blog-entry > a .desc .date {
+        color: rgba(0, 0, 0, 0.4); }
+      body .content-right #sidebar .side .blog-entry > a .desc h3 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+        color: #888; }
+      body .content-right #sidebar .side .blog-entry > a .desc h3:hover {
+        color: #fbf2eb; }
+    body .content-right #sidebar .side .category li a {
+      display: block;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #888;
+      padding: 0.5em 1em; }
+    body .content-right #sidebar .side .category li a:hover {
+      color: #fbf2eb; }
+    body .content-right #sidebar .side .insta_img {
+      text-align: center; }
+      body .content-right #sidebar .side .insta_img img {
+        width: 100%;
+        height: 250px; }
+  body footer {
+    margin-top: 5%;
+    background-color: #000; }
+    body footer .container .row {
+      text-align: center;
+      margin-top: 1%; }
+      body footer .container .row #fh5co-logo h1 {
+        text-align: center; }
+      body footer .container .row .qfy-icon_32x32.white1 {
+        background-position-y: -160px; }
+      body footer .container .row .qfy-icon_32x32 {
+        background-image: url("../image/social_icon_32x32.png");
+        background-repeat: no-repeat;
+        height: 32px;
+        width: 32px;
+        display: inline-block; }
+      body footer .container .row .qq-icon_32x32 {
+        background-position: -64px 0; }
+      body footer .container .row .facebook-icon_32x32 {
+        background-position: -128px 0; }
+      body footer .container .row .weixin-icon_32x32 {
+        background-position: 0px 0px; }
+      body footer .container .row .email-icon_32x32 {
+        background-position: -640px 0; }
+      body footer .container .row .phone1-icon_32x32 {
+        background-position: -672px 0; }
+      body footer .container .row ul {
+        text-align: center; }
+        body footer .container .row ul li {
+          display: inline-block;
+          margin-left: 1em;
+          list-style: none; }
+      body footer .container .row .copyright {
+        color: #FFF; }
+
+/*# sourceMappingURL=common.css.map */

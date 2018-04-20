@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Josefin Slab", Arial, serif;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/body_repeat.jpg"); }
+  body .content .row {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 3%; }
+    body .content .row .content-left .breadcrumb {
+      background-color: #fff; }
+    body .content .row .content-left .breadcrumb > li + li:before {
+      content: ""; }
+    body .content .row .content-left .writing {
+      background-color: #fff; }
+      body .content .row .content-left .writing textarea {
+        resize: none;
+        width: 100%;
+        height: 1000px;
+        border: none;
+        background-color: transparent !important; }
+      body .content .row .content-left .writing .upload-pic .glyphicon-picture {
+        display: block;
+        margin-top: 1em;
+        margin-left: 1em;
+        font-size: 24px;
+        color: #2aabd2;
+        position: relative; }
+        body .content .row .content-left .writing .upload-pic .glyphicon-picture input {
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          top: 0; }
+      body .content .row .content-left .writing .button {
+        text-align: center;
+        padding-bottom: 2em; }
+        body .content .row .content-left .writing .button button {
+          padding: 1em 2em;
+          background-color: #2aabd2; }
+
+/*# sourceMappingURL=blog_writing.css.map */

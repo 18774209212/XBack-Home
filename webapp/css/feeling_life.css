@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Josefin Slab", Arial, serif;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/body_repeat.jpg"); }
+  body .content .content-left .breadcrumb {
+    background-color: #fff; }
+  body .content .content-left .breadcrumb > li + li:before {
+    content: ""; }
+  body .content .content-left .article-lists {
+    background-color: #fff;
+    margin-top: 5%; }
+    body .content .content-left .article-lists .item ul li {
+      border-bottom: 1px dashed #888;
+      padding: 0 0.5em;
+      padding-bottom: 1em; }
+      body .content .content-left .article-lists .item ul li .row {
+        margin-right: 0px;
+        margin-left: 0px;
+        overflow: hidden;
+        margin-top: 3%; }
+        body .content .content-left .article-lists .item ul li .row h3 {
+          padding-left: 0.8em;
+          font-size: 1.5em;
+          color: #333; }
+        body .content .content-left .article-lists .item ul li .row img {
+          width: 100%;
+          height: 100%; }
+        body .content .content-left .article-lists .item ul li .row button {
+          float: right; }
+        body .content .content-left .article-lists .item ul li .row span {
+          font-family: "Sacramento", cursive;
+          padding-right: 1.5em;
+          color: #888; }
+  body .content .content-left .page-nav {
+    text-align: center; }
+
+/*# sourceMappingURL=feeling_life.css.map */

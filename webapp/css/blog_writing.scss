@@ -1,0 +1,68 @@
+@mixin margin_top($margin-top){
+  margin-top: $margin-top;
+}
+@mixin color($color){
+  color: $color;
+}
+@mixin margin-bottom($margin-bottom){
+  margin-bottom: $margin-bottom;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Josefin Slab", Arial, serif;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/body_repeat.jpg");
+  .content{
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+      @include margin-bottom(3%);
+      .content-left {
+        .breadcrumb {
+          background-color: #fff;
+        }
+        .breadcrumb > li + li:before {
+          content: "";
+        }
+        .writing {
+          background-color: #fff;
+          textarea {
+            resize: none;
+            width: 100%;
+            height: 1000px;
+            border: none;
+            background-color: transparent !important;
+          }
+          .upload-pic{
+            .glyphicon-picture{
+              display: block;
+              margin-top: 1em;
+              margin-left: 1em;
+              font-size: 24px;
+              color: #2aabd2;
+              position: relative;
+              input{
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+              }
+            }
+          }
+          .button{
+            text-align: center;
+            padding-bottom: 2em;
+            button{
+              padding: 1em 2em;
+              background-color: #2aabd2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

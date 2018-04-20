@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*标题部分*/
+.content .row .title{
+	text-align: center;
+}
+.content .row .title p{
+	color: #fbf2eb;
+	font-size: 2em;
+    /*font-family: "Josefin Slab", Arial, serif;*/
+	font-family: "Sacramento", cursive;
+	text-shadow: 0.1em 0.1em #888;
+}
+.content .row .title p span{
+	color: #1BBC9B;
+}
+/*猫头鹰*/
+#login #owl-login{
+	width: 211px;
+	height: 108px;
+	background-image: url(../image/owl-login-head.png);
+	margin-top: -86%;
+	position: relative;
+}
+#owl-login .hands{
+	width: 100%;
+	height: 34px;
+	position: absolute;
+	bottom: -14%;
+	left: 0;
+}
+#owl-login .hands .hand{
+	width: 30px;
+	height: 20px;
+	background-color: #472d20;
+	/*浏览器兼容*/
+	-o-border-radius:100%;
+	-ms-border-radius:100%;
+	-moz-border-radius:100%;
+	-webkit-border-radius:100%;
+	position: absolute;
+	top: 0%;
+	transform: rotate(0deg);
+	transform: rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform:rotate(0deg);
+	transition: ease-out 0.3s; 
+}
+#owl-login .hands .hand-l{
+	left: 6%;
+}
+#owl-login .hands .hand-r{
+	right: 6%;
+}
+#owl-login .arms{
+	width: 100%;
+	height: 41px;
+	position: absolute;
+	bottom: 7%;
+	overflow: hidden;
+}
+#owl-login .arms .arm{
+	width: 40px;
+	height: 65px;
+	background-image: url(../image/owl-login-arm.png);
+	position: absolute;
+	top: 96%;
+}
+#owl-login .arms .arm-l{
+	left: 10%;
+	transition: ease-out 0.3s; 
+	transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	-o-transform:rotate(-20deg);
+}
+#owl-login .arms .arm-r{
+	right: 6%;
+	transition: ease-out 0.3s; 
+	transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	-o-transform:rotate(-20deg);
+}
+
+/*当鼠标聚焦在密码栏的时候就遮住眼睛*/
+#owl-login.owl-login .hands .hand-l{
+	transition: ease-out 0.3s;
+	/*浏览器兼容*/
+	transform:translateX(40px) translateY(-40px);
+	-moz-transform: translateX(40px) translateY(-40px);/*兼容火狐*/
+	-ms-transform:translateX(40px) translateY(-40px); 	/* IE 9 */
+	-webkit-transform:translateX(40px) translateY(-40px); /* Safari 和 Chrome */
+	-o-transform:translateX(40px) translateY(-40px); 	/* Opera */
+	top: 80%;
+	left: 9%;
+}
+#owl-login.owl-login .hands .hand-r{
+	transition: ease-out 0.3s;
+	/*浏览器兼容*/
+	transform:translateX(-40px) translateY(-40px);
+	-moz-transform: translateX(-40px) translateY(-40px);/*兼容火狐*/
+	-ms-transform:translateX(-40px) translateY(-40px);	/* IE 9 */
+	-webkit-transform:translateX(-40px) translateY(-40px); /* Safari 和 Chrome */
+	-o-transform:translateX(-40px) translateY(-40px); 	/* Opera */
+	top: 80%;
+	right: 7%;
+}
+#owl-login.owl-login .arms .arm-l{
+	transition: ease-out 0.3s;
+	/*浏览器兼容*/
+	-moz-transform:  translateX(40px) translateY(-40px);/*兼容火狐*/
+	transform: translateX(40px) translateY(-40px);
+	-ms-transform: translateX(40px) translateY(-40px);	/* IE 9 */
+	-webkit-transform: translateX(40px) translateY(-40px); /* Safari 和 Chrome */
+	-o-transform: translateX(40px) translateY(-40px); 	/* Opera */
+}
+#owl-login.owl-login .arms .arm-r{
+	transition: ease-out 0.3s;
+	/*浏览器兼容*/
+	-moz-transform:translateX(-40px) translateY(-40px) scaleX(-1);
+	transform: translateX(-40px) translateY(-40px) scaleX(-1);
+	-ms-transform: translateX(-40px) translateY(-40px) scaleX(-1);	/* IE 9 */
+	-webkit-transform: translateX(-40px) translateY(-40px) scaleX(-1); /* Safari 和 Chrome */
+	-o-transform:translateX(-40px) translateY(-40px) scaleX(-1); 	/* Opera */
+}
+/*表单部分*/
+.content .login-div{
+	margin: 10% auto;
+}
+.login-div .container .info-canvas{
+	background-color: #fff;
+	padding-top:8% ;
+	padding-bottom: 8%;
+}
+.form-group{
+	position: relative;
+}
+.form-group .control-i{
+	position: absolute;
+	top: 0.8em;
+	left: 1.5em;
+	font-size: 18px;
+	color: rgba(0,0,0,0.3);
+}
+.form-group .form-control{
+	padding: 0.3em 2.5em;
+	font-size: 1em;
+}
+.form-group .btn-login{
+	background-color:#03a9f4;
+	color: #FFFFFF;
+	font-size: 1.3em;
+}
