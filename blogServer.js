@@ -7,7 +7,8 @@ const ht=require("http"),
         formidable=require("formidable");
 //引入项目模块
 const tool=require("./common/tool"),
-        userctl=require("./control/usercontrol");
+        userctl=require("./control/usercontrol"),
+        blogctl=require("./control/blogcontrol");
 //第二步：创建服务器
 const server=ht.createServer(function(req,res){
     console.log("服务器启动成功！");
@@ -32,7 +33,14 @@ const server=ht.createServer(function(req,res){
         data.parse(req,function(err,fields,files){
             userctl.logincontrol(fields,res);
         });
-    } else{
+    }else if(path.pathname==="/inithome"){
+        //    获取前台传过来的请求参数
+        let data=new formidable.IncomingForm();
+        data.parse(req,function (err,fields,files) {
+            blogctl.bloglistctl(fields,res);
+        });
+    }
+    else{
         //呈现页面
         tool.sendFile(res,path.pathname);
     }
