@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5b5163-5ad7-4493-a582-4dd951f3afba" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/control/blogcontrol.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dao/blogdao.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/blogServer.js" afterPath="$PROJECT_DIR$/blogServer.js" />
-      <change beforePath="$PROJECT_DIR$/webapp/css/home.css" afterPath="$PROJECT_DIR$/webapp/css/home.css" />
-      <change beforePath="$PROJECT_DIR$/webapp/css/home.scss" afterPath="$PROJECT_DIR$/webapp/css/home.scss" />
-      <change beforePath="$PROJECT_DIR$/webapp/home.html" afterPath="$PROJECT_DIR$/webapp/home.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/js/home.js" afterPath="$PROJECT_DIR$/webapp/js/home.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +19,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="187" column="42" lean-forward="false" selection-start-line="187" selection-start-column="42" selection-end-line="187" selection-end-column="42" />
+            <state relative-caret-position="486">
+              <caret line="201" column="16" lean-forward="true" selection-start-line="201" selection-start-column="16" selection-end-line="201" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -365,7 +357,7 @@
       <workItem from="1524132334967" duration="4998000" />
       <workItem from="1524208970961" duration="22550000" />
       <workItem from="1524274813778" duration="11986000" />
-      <workItem from="1524306991354" duration="11757000" />
+      <workItem from="1524306991354" duration="11895000" />
     </task>
     <task id="LOCAL-00001" summary="完成登录操作">
       <created>1524286419451</created>
@@ -374,11 +366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524286419470</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成首页博客列表显示操作">
+      <created>1524321000445</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524321000445</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99817000" />
+    <option name="totallyTimeSpent" value="99955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -430,7 +429,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成登录操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成登录操作" />
+    <MESSAGE value="完成首页博客列表显示操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成首页博客列表显示操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -798,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="187" column="42" lean-forward="false" selection-start-line="187" selection-start-column="42" selection-end-line="187" selection-end-column="42" />
+        <state relative-caret-position="486">
+          <caret line="201" column="16" lean-forward="true" selection-start-line="201" selection-start-column="16" selection-end-line="201" selection-end-column="16" />
           <folding />
         </state>
       </provider>
