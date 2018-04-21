@@ -7,7 +7,7 @@ const ht=require("http"),
         formidable=require("formidable");
 //引入项目模块
 const tool=require("./common/tool"),
-       userdao=require("./dao/userdao");
+        userctl=require("./control/usercontrol");
 //第二步：创建服务器
 const server=ht.createServer(function(req,res){
     console.log("服务器启动成功！");
@@ -15,28 +15,23 @@ const server=ht.createServer(function(req,res){
    let path=req.url;
    path=url.parse(path,true);
 //  把网站图标过滤掉
-    if(path.pathname==="/favcion.ico"){
-        console.log("favcion");
+    if(path.pathname==="/favicon.ico"){
+        let file=fs.readFileSync(pt.join(__dirname,"./webapp/image","logo.jpg"));
+        res.writeHead("200",{
+            "Content-Type": {
+                ".css":"text/css",
+                ".js":"text/javaScript",
+                ".jpg":".jpeg"
+            }
+        });
+        res.write(file);
+        res.end();
     }else if(path.pathname==="/loginaction"){
     //    获取前台传过来的请求参数
         let data=new formidable.IncomingForm();
         data.parse(req,function(err,fields,files){
-            let username=fields.username;
-            userdao.queryByUserName(username,function(result){
-                if(result!=null&&result!=undefined){
-                //    校验密码
-                    if(){
-
-                    }else{
-
-                    }
-                }else{
-                //    用户名不存在
-                }
-            });
+            userctl.logincontrol(fields,res);
         });
-
-
     } else{
         //呈现页面
         tool.sendFile(res,path.pathname);

@@ -25,4 +25,5 @@ $(function(){
     $(".slide-three").click(function(){
         $("#myCarousel").carousel(2);
     });
+    $("#myCarousel").carousel({interval:2000});
 });

@@ -4,7 +4,7 @@ $(function(){
 	}).blur(function(){
 		$('#login #owl-login').removeClass("owl-login");
 	});
-
+	$("#myAlert").hide();
 //	获取登录数据
 	$("#btn-login").on("click",function(){
 		var user=$("#login").serialize();
@@ -12,17 +12,32 @@ $(function(){
 		var str=paramToJson(user);
         var data=strToJson(str);
 	//	用ajax提交数据
-        $.ajax({
-			type:"post",
-			data:data,
-			url:"/loginaction",
-			async:false,
-			success:function(data){
-				alert(data);
-			},
-			error:function(){
-
-			}
+		ajaxEvent("post",data,"/loginaction",function(data){
+            //返回的data是一个String，所以需要把String转换为json
+            var json=strToJson(data);
+            if(json.desc=="0"){
+                $("#myAlert").show().text("登录成功").slideDown(400);
+                //	本地存储数据
+                window.localStorage.setItem("userid",json.userid);
+                window.localStorage.setItem("username",json.username);
+                setTimeout(function(){
+                    $("#myAlert").slideUp(400);
+                },1500);
+                //	进行页面跳转
+                window.location.href="../home.html";
+            }else if(json.desc=="1"){
+                //密码错误
+                $("#myAlert").show().text("密码错误").slideDown(400);
+                setTimeout(function(){
+                    $("#myAlert").slideUp(400);
+                },1500);
+            }else{
+                //用户名不存在
+                $("#myAlert").show().text("用户名不存在").slideDown(400);
+                setTimeout(function(){
+                    $("#myAlert").slideUp(400);
+                },1500);
+            }
 		});
 	});
 });
