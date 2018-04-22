@@ -48,7 +48,7 @@ $(function(){
         });
         $(".item-time .MonAndAay").each(function (index) {
             var date=new Date(json[index].createtime);
-            $(this).text((date.getMonth()+1)+"-"+date.getDay());
+            $(this).text((date.getMonth()+1)+"-"+date.getDate());
         });
         $(".item-time .year").each(function (index) {
             var date=new Date(json[index].createtime);

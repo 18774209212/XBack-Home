@@ -24,4 +24,18 @@ function logincontrol(fields,res){
         }
     });
 }
-module.exports={logincontrol};
+//查询用户信息
+function UserInfoControl(fields,res){
+    var userid=fields.userid;
+    userdao.queryUserInfo(userid,function(results){
+    //    用户信息一定存在
+       res.writeHead(200);
+       res.write(JSON.stringify({
+           nickname:results[0].nickname,
+           education:results[0].education,
+           motto:results[0].motto
+       }));
+       res.end();
+    });
+}
+module.exports={logincontrol,UserInfoControl};
