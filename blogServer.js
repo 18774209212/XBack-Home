@@ -51,6 +51,18 @@ const server=ht.createServer(function(req,res){
         data.parse(req,function(err,fields,files){
             blogctl.categoryctl(fields,res);
         });
+    }else if(path.pathname==="/Page"){
+        //    获取前台传来的数据
+        let data=new formidable.IncomingForm();
+        data.parse(req,function(err,fields,files){
+            blogctl.pageCount(fields,res);
+        });
+    }else if(path.pathname==="/readMore"){
+        //    获取前台传来的数据
+        let data=new formidable.IncomingForm();
+        data.parse(req,function(err,fields,files){
+            blogctl.readMore(fields,res);
+        });
     }
     else{
         //呈现页面

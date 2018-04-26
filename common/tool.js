@@ -20,7 +20,7 @@ function sendFile(response,filename){
 function getconnection(){
     //第二步：创建连接
     let con=mysql.createConnection({
-        host     : 'localhost',
+        host     : '127.0.0.1',
         user     : 'root',
         password : '',
         database : 'myblog'

@@ -8,6 +8,9 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
+    <content url="file://$MODULE_DIR$/../showInfo" />
+    <content url="file://$MODULE_DIR$/../video" />
+    <content url="file://E:/前端/前端/jquery插件/博客/videojs" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

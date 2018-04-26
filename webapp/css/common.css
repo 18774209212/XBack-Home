@@ -159,5 +159,7 @@ body {
           list-style: none; }
       body footer .container .row .copyright {
         color: #FFF; }
+  body .bg-blue {
+    background-color: #1b6d85; }
 
 /*# sourceMappingURL=common.css.map */
