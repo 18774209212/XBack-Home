@@ -1,4 +1,3 @@
-"use strict";
 function strToJson(str){
         var json = (new Function("return " + str))();
         return json;
@@ -25,4 +24,14 @@ function ajaxEvent(method,data,url,callback) {
         },
         error:function(){}
     });
+}
+//加载头部
+function ajaxloadHead(local){
+    htmlobj=$.ajax({url:local,async:false});
+    $(".page").prepend(htmlobj.responseText);
+}
+//加载尾部
+function ajaxloadFooot(local){
+    htmlobj=$.ajax({url:local,async:false});
+    $(".page").append(htmlobj.responseText);
 }

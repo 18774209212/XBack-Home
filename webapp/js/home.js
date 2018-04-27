@@ -1,4 +1,7 @@
 $(function(){
+    //加载头部和尾部
+    ajaxloadHead('head.html');
+    ajaxloadFooot('foot.html');
     // 初始化轮播
     $(".start-slide").click(function(){
         $("#myCarousel").carousel('cycle');

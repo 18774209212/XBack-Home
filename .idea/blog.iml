@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../CloudGallery" />
     <content url="file://$MODULE_DIR$/../FrameworkDemo" />
     <content url="file://$MODULE_DIR$/../Server" />
     <content url="file://$MODULE_DIR$">
@@ -11,6 +12,7 @@
     <content url="file://$MODULE_DIR$/../showInfo" />
     <content url="file://$MODULE_DIR$/../video" />
     <content url="file://E:/前端/前端/jquery插件/博客/videojs" />
+    <content url="file://E:/课程/用户界面设计/myBlog" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

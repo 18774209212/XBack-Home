@@ -1,4 +1,7 @@
 $(function(){
+    //加载头部和尾部
+    ajaxloadHead('head.html');
+    ajaxloadFooot('foot.html');
     var urlParam = decodeURI(window.location.href.split("?")[1]);
     var blogId=urlParam.split("=")[1];
     readArticle(blogId);

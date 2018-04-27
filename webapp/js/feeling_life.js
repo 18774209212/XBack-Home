@@ -1,4 +1,7 @@
 $(function(){
+    //加载头部和尾部
+    ajaxloadHead('head.html');
+    ajaxloadFooot('foot.html');
     initPage(1);
     $("#pagination li a").on("click",function(){
         var pageIndex=$(this).attr("pageIndex");
